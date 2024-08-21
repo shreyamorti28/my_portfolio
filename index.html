@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Morti - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+</head>
+<body>
+    <header>
+        <h1>Shreya Morti</h1>
+        <p>MIT-WPU | Web Development Enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Hello! I'm Shreya Morti, a web development enthusiast currently studying at MIT-WPU. I am passionate about creating interactive, user-friendly websites and applications.</p>
+            <img src="my_pic.jpg" alt="Shreya Morti" class="profile-img">
+            <ul>
+                <li>Studying: MIT-WPU</li>
+                <li>Passion: Web Development</li>
+                <li>Skills: HTML, CSS, JavaScript, React, Django</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>My Projects</h2>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Project 1</td>
+                    <td>A website created using HTML, CSS, and JavaScript.</td>
+                    <td><a href="project1.html" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Project 2</td>
+                    <td>A full-stack web application using React and Django.</td>
+                    <td><a href="project2.html" target="_blank">View Project</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript & React</li>
+                <li>Python & Django</li>
+                <li>Database Management (MySQL, MongoDB)</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, please fill out the form below:</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shreya Morti. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

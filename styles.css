@@ -1,0 +1,171 @@
+/* External CSS */
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #FF7F50; /* Coral color */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #FF6347; /* Tomato color */
+}
+
+/* Container for sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Section Card Styles */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #FF7F50; /* Coral color */
+}
+
+.card img.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #FF7F50; /* Coral color */
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Projects Section */
+.card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.card table, .card th, .card td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.card th {
+    background: #FF7F50; /* Coral color */
+    color: white;
+}
+
+/* Skills List */
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    background: #FF7F50;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+.card form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.card form input,
+.card form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.card form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #FF7F50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.card form button:hover {
+    background: #FF6347; /* Tomato color */
+}
+
+/* Footer Styles */
+footer {
+    background: #FF7F50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
