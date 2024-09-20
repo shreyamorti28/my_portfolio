@@ -1,125 +1,169 @@
-/* Base Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F6C1B3; /* Peach background color */
-    color: #333;
 }
 
-/* Header Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
 header {
-    background: #F6C1B3; /* Darker peach for header */
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 40px;
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* Navigation Styles */
-nav {
-    background: #F6C1B3; /* Light peach for navigation */
-    color: #fff;
-    text-align: center;
-    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 100;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
+    list-style: none;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
-/* Section Styles */
-section {
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 800px; /* Center the content */
+.btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-section#about {
-    background: #FFDAB9; /* Peach for about section */
-    text-align: center;
-    height: 75%;
-    width: 75%;
+.full-page {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    
 }
 
-section#about img {
+#about {
+    background-color: #f4f4f4;
+}
+
+.left {
+    margin: 10px auto;
+    max-width: 50%;
+}
+
+.typewriter {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.highlight {
+    font-size: 70px;
+    font-weight: 100;
+    color: #ff9800;
+}
+
+.description {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #333;
+}
+.right{
+    display: flex;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+
+.right img {
+    width: 550px;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    border: 3px solid #FFB07C; /* Border for profile picture */
 }
 
-section#projects {
-    background: #FFE4B5; /* Lighter peach for projects section */
+#projects {
+    background-color: #e8f0fe;
 }
 
-section#projects .project {
-    margin-bottom: 2rem;
-}
-
-section#projects .project img {
+table {
     width: 100%;
-    height: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-section#contact {
-    background: #FFDAB9; /* Peach for contact section */
-    text-align: center;
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-section#contact form {
-    display: inline-block;
-    text-align: left;
-    max-width: 600px;
-    width: 100%;
+th {
+    background-color: #333;
+    color: white;
 }
 
-section#contact form label {
-    display: block;
-    margin: 0.5rem 0 0.25rem;
+a {
+    color: #ff9800;
 }
 
-section#contact form input,
-section#contact form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #FFB07C; /* Peach border */
-    border-radius: 4px;
-    background-color: #FFF5EE; /* Very light peach background */
+#contact {
+    background-color: #fafafa;
 }
 
-section#contact form button {
-    padding: 0.5rem 1rem;
-    background: #FFB07C; /* Darker peach for button */
-    color: #fff;
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-/* Footer Styles */
 footer {
-    background: #FFB07C; /* Darker peach for footer */
-    color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #ff9800;
 }

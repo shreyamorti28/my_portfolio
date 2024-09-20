@@ -3,40 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Shreya's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar Section -->
     <header>
-        <h1 style="font-family:lane">Shreya Morti</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="resume.pdf" class="btn">Download Resume</a>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
+    <!-- Main Section -->
+    <section id="about" class="full-page">
+        <div class="left">
+            <!-- The span here will handle the typewriter effect -->
+            <h1><span class="typewriter"></span></h1>
+            <h1 class="name">I am <span class="highlight">Shreya</span></h1>
+            <p class="description">I am a student doing BTech in Computer Science and I am a computer enthusiast, ready for work and collaboration, giving my best on whatever work I do.</p>
         </div>
-        <div class="project">
+        <div class="right">
+            <img src="myimage.jpg" alt="Shreya's Photo">
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="full-page">
+        <h2>My Projects</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Softwares Used</th>
+                    <th>Link to Project</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td><a href="#">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>E-commerce Platform</td>
+                    <td>React, Node.js, MongoDB</td>
+                    <td><a href="#">View Project</a></td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="full-page">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 My Portfolio</p>
+        <a href="https://www.linkedin.com" class="icon"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:shreya@example.com" class="icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com" class="icon"><i class="fab fa-github"></i></a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
