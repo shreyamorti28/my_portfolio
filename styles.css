@@ -353,6 +353,33 @@ form button:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add more shadow */
 }
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .icon:hover {
+    color: #f39c12;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
