@@ -1,15 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const typewriter = document.querySelector(".typewriter");
-    let text = "Hello,";
-    let index = 0;
-
-    function type() {
-        if (index < text.length) {
-            typewriter.innerHTML += text.charAt(index);
-            index++;
-            setTimeout(type, 100); // Adjust typing speed if needed
-        }
-    }
-
-    type();
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });

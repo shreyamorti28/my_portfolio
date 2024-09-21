@@ -20,62 +20,56 @@
         </nav>
     </header>
 
-    <!-- Main Section -->
-    <section id="about" class="full-page">
+    <section id="about">
         <div class="left">
-            <!-- The span here will handle the typewriter effect -->
-            <h1><span class="typewriter"></span></h1>
-            <h1 class="name">I am <span class="highlight">Shreya</span></h1>
-            <p class="description">I am a student doing BTech in Computer Science and I am a computer enthusiast, ready for work and collaboration, giving my best on whatever work I do.</p>
+            <div class="typewriter">Welcome</div>
+            <div class="name">Shreya Morti</div>
+            <div class="highlight">Web Developer</div>
+            <div class="description">
+                Passionate about creating beautiful and functional websites.
+            </div>
         </div>
         <div class="right">
-            <img src="myimage.jpg" alt="Shreya's Photo">
+            <img src="myimage.jpg" alt="Profile Image">
         </div>
     </section>
+    
 
-    <!-- Projects Section -->
-    <section id="projects" class="full-page">
+    <section id="projects">
         <h2>My Projects</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Description</th>
-                    <th>Softwares Used</th>
-                    <th>Link to Project</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Portfolio Website</td>
-                    <td>HTML, CSS, JavaScript</td>
-                    <td><a href="#">View Project</a></td>
-                </tr>
-                <tr>
-                    <td>E-commerce Platform</td>
-                    <td>React, Node.js, MongoDB</td>
-                    <td><a href="#">View Project</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="project-card">
+            <h3>Project Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="project-card">
+            <h3>Project Title 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu.</p>
+            <a href="#">Read More</a>
+        </div>
+        <!-- Add more project cards as needed -->
     </section>
+    
 
     <!-- Contact Section -->
-    <section id="contact" class="full-page">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+    <section id="contact">
+        <div class="contact-container">
+            <form>
+                <h2>Contact Form</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
-
+    
     <!-- Footer Section -->
     <footer>
         <a href="https://www.linkedin.com" class="icon"><i class="fab fa-linkedin"></i></a>
