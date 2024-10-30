@@ -5,32 +5,42 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+
+body {
+    font-family: Apercu, "Source Sans Pro", system, system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
 }
-.html{
+
+
+
+.html {
     scroll-behavior: smooth;
 }
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(to right, #333, #555); /* Gradient background */
+    background: linear-gradient(to right, #333, #555);
+    /* Gradient background */
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Vertically center items */
-    padding: 15px 30px; /* Increase padding for a more spacious look */
+    align-items: center;
+    /* Vertically center items */
+    padding: 15px 30px;
+    /* Increase padding for a more spacious look */
     z-index: 100;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a stronger shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a stronger shadow for depth */
 }
-nav{
+
+nav {
     display: flex;
     flex: 1;
     margin: 0;
     padding: 0;
-    flex: 1; /* Allow ul to grow and take available space */
+    flex: 1;
+    /* Allow ul to grow and take available space */
 }
 
 nav ul {
@@ -39,45 +49,59 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;     
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 20px; /* Increase font size for better readability */
-    font-weight: 600; /* Use a slightly bolder font */
-    padding: 10px 20px; /* Adjust padding for better click area */
-    border-radius: 6px; /* More rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    font-size: 20px;
+    /* Increase font size for better readability */
+    font-weight: 600;
+    /* Use a slightly bolder font */
+    padding: 10px 20px;
+    /* Adjust padding for better click area */
+    border-radius: 6px;
+    /* More rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    /* Add transform transition */
 }
 
 nav ul li a:hover {
-    background-color: #FF6347; /* Tomato color */
+    background-color: #FF6347;
+    /* Tomato color */
     color: #fff;
-    transform: scale(1.05); /* Slightly enlarge the link on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the link on hover */
 }
+
 nav ul li a.active {
-    background-color: #FF6347; /* Tomato color for active links */
+    background-color: #FF6347;
+    /* Tomato color for active links */
     color: #fff;
-    font-weight: 700; /* Bolder text for active link */
+    font-weight: 700;
+    /* Bolder text for active link */
 }
 
 /* Button Styles */
 .btn {
-    background-color: #ff9800; /* Button color */
+    background-color: #ff9800;
+    /* Button color */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 6px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-left: auto; /* Push the button to the right */
+    margin-left: auto;
+    /* Push the button to the right */
 }
 
 
 .btn:hover {
-    background-color: #e68900; /* Darker orange on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background-color: #e68900;
+    /* Darker orange on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the button on hover */
 }
 
 /* Full-Page Section */
@@ -85,134 +109,196 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     height: 100vh;
-    justify-content: center;
 }
 
 #about {
-    height: 100vh;
-    
-    align-items: center;
     display: flex;
     flex-direction: row;
-    background-color: #f4f4f4;
-    padding: 50px 0;
-    border-top: 5px solid #ff9800; /* Add a decorative top border */
-    border-bottom: 5px solid #ff9800; /* Add a decorative bottom border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 100px;
+    height: 100vh;
+    background-color: white;
+    border-top: 5px solid #ff9800;
+    border-bottom: 5px solid #ff9800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Adjusting the left section to center text properly */
+/* Align text to the left */
 .left {
-    margin: 0 auto;
-    max-width: 50%;
-    text-align: center; /* Center align text */
-    padding: 0 20px; /* Add horizontal padding for better spacing */
+    flex: 1;
+    text-align: left;
+    /* Align text to the left */
+    /* Add some padding to the right */
 }
-.left h1 {
-    font-size: 70px;
+
+.left .typewriter {
+    font-size: 50px;
     color: #333;
-    margin-bottom: 20px; /* Add space below the heading */
+    border-right: .15em solid orange;
+    animation: typing 2.5s steps(10, end) 0s 1 normal both, blink-caret 0.75s step-end infinite;
+    width: auto;
 }
-.left p {
+
+.left .name {
+    font-size: 50px;
+    margin-top: 40px;
+    color: #333;
+}
+
+.left .highlight {
+    font-size: 40px;
+    color: #666;
+}
+
+
+/* Align image to the right */
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.connect {
     font-size: 20px;
-    color: #666; /* Use a softer color for the text */
-    line-height: 1.6; /* Improve readability with line height */
-    margin-top: 20px;
+    margin-top: 40px;
 }
+
+.plain-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.plain-link::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 58%;
+    background-color: #f5a623;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.highlight-name {
+    font-weight: bold;
+    /* Makes the text bold */
+    padding: 2px 4px;
+    /* Adds some padding around the text */
+    border-radius: 1px;
+    color: #ff9800;
+    /* Optional: adds rounded corners */
+}
+
+
 
 /* Typewriter Effect */
 .typewriter {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     color: #333;
     overflow: hidden;
     white-space: nowrap;
     border-right: .15em solid orange;
-    animation: typing 2.5s steps(40, end) 0s 1 normal both, blink-caret 0.75s step-end infinite;
-    display: inline-block; /* Ensure the width fits the content */
+    animation: typing 4.5s steps(50, end) 1 normal both, blink-caret 0.75s step-end 5;
+    display: inline-block;
+    /* Ensure the width fits the content */
     width: auto;
 }
 
 /* Keyframes for Typing */
 @keyframes typing {
-    from { width: 0; }
-    to { width: 42%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 30%;
+    }
 }
 
 /* Keyframes for Blinking Caret */
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: orange; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
 }
 
 
-.name {
-    font-size: 70px;
-    margin-top: 10px;
-    color: #333;
-}
 
-.highlight {
-    font-size: 70px;
-    font-weight: 100;
-    color: #ff9800;
-}
-
-.description {
-    font-size: 25px;
-    margin-top: 20px;
-    color: #333;
-}
-
-.right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    text-align: center;
-    position: relative; /* Ensure the image is positioned correctly */
-}
-
-.right img {
-    width: 100%;
-    max-width: 550px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to image */
-    transition: transform 0.3s ease;
-}
 .right img:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the image on hover */
 }
 
 /* Projects Section */
 #projects {
     display: flex;
     flex-direction: column;
-    background-color: #e8f0fe;
+    background-color: white;
     padding: 90px 0;
     height: 100vh;
-    border-top: 5px solid #ff9800; /* Add a decorative top border */
+    border-top: 5px solid #ff9800;
+    /* Add a decorative top border */
     border-bottom: 5px solid #ff9800;
 }
+
+
+
 #projects h2 {
     text-align: center;
     color: #333;
-    font-size: 2.5rem; /* Increased font size for section heading */
+    font-size: 2.5rem;
+    /* Increased font size for section heading */
     margin-bottom: 20px;
 }
+
+#projects h2::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 150px;
+    background-color: #f5a623;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
 .project-card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
     margin: 20px auto;
     padding: 20px;
-    max-width: 600px; /* Constrain the width of the cards */
+    max-width: 600px;
+    /* Constrain the width of the cards */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .project-card:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-10px);
+    /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhance shadow on hover */
 }
+
 .project-card p {
     font-size: 1.2rem;
     color: #666;
@@ -222,14 +308,21 @@ nav ul li a.active {
 .project-card a {
     display: inline-block;
     margin-top: 10px;
-    color: #ff9800; /* Button color */
+    color: white;
+    /* Button color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
+/* Optional: Prevent background scroll when modal is open */
+.shifted {
+    overflow: hidden;
+}
+
 .project-card a:hover {
-    color: #e68900; /* Darker orange on hover */
+    color: #e68900;
+    /* Darker orange on hover */
 }
 
 
@@ -241,7 +334,9 @@ table {
     justify-content: center;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
@@ -252,107 +347,197 @@ th {
     color: white;
 }
 
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#projectModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    /* Above other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
+    overflow: auto;
+}
+
+/* Modal Content */
+#modalDetails {
+    position: relative;
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Headings and Paragraphs */
+#modalDetails h3 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#modalDetails p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Styling for the Video Containers */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+
+
+
 /* Contact Section */
-#contact {
-    background-color: #fafafa;
+/* About Me Section */
+#about-me {
+    background-color: white;
+    padding: 4rem 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
-    height: 100vh;
 }
 
-/* Contact Form Container */
-.contact-container {
-    display: flex;
-    flex-direction: row; /* Side by side on larger screens */
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 2rem;
+.about-container {
+    max-width: 800px;
+    align-items: center;
     background-color: white;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    max-width: 1200px; /* Increased max-width for a larger container */
-    width: 100%;
-}
-
-/* Contact Form */
-form {
-    width: 60%; /* Increased form width */
-    padding: 2rem; /* Added padding for better spacing */
-    box-sizing: border-box;
-    margin-right: 2rem; /* Space between form and contact box */
-}
-
-form h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2.5rem; /* Increased font size for a bolder header */
-    color: #333;
-}
-
-/* Form Labels */
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Form Inputs */
-form input, form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-form input:focus, form textarea:focus {
-    border-color: #FF6347; /* Tomato color */
-}
-
-/* Submit Button */
-form button {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    background: #FF7F50;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-form button:hover {
-    background: #FF6347; /* Tomato color */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Contact Box */
-.contact-box {
-    background-color: #FF7F50; /* Coral color */
-    color: white;
     padding: 2rem;
-    border-radius: 10px;
-    width: 35%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-box:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add more shadow */
+.about-details {
+    padding: 1rem;
 }
+
+#about-me h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    /* Increased font size for section heading */
+    margin-bottom: 30px;
+}
+
+#about-me h2::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 50%;
+    background-color: #f5a623;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.about-details p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills Categories */
+.skills-category {
+    margin-bottom: 1.5rem;
+}
+
+.skills-category h4 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 0.5rem;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background-color: #ff9800;
+    color: white;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.skills li:hover {
+    background-color: #e68a00;
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
@@ -362,6 +547,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
 }
 
 footer .icon {
@@ -384,18 +571,22 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-container {
-        flex-direction: column; /* Stack form and box vertically on smaller screens */
+        flex-direction: column;
+        /* Stack form and box vertically on smaller screens */
         align-items: center;
     }
 
     form {
         width: 100%;
-        margin-right: 0; /* Remove margin on small screens */
-        margin-bottom: 2rem; /* Add space below form */
+        margin-right: 0;
+        /* Remove margin on small screens */
+        margin-bottom: 2rem;
+        /* Add space below form */
     }
 
     .contact-box {
         width: 100%;
-        margin-bottom: 2rem; /* Space between contact box and form on small screens */
+        margin-bottom: 2rem;
+        /* Space between contact box and form on small screens */
     }
 }
