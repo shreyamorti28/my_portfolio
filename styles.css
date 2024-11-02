@@ -253,8 +253,8 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: 90px 0;
-    height: 100vh;
+    padding: 90px 0 300px;
+    height: auto;
     border-top: 5px solid #ff9800;
     /* Add a decorative top border */
     border-bottom: 5px solid #ff9800;
