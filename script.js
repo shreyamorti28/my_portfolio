@@ -44,7 +44,7 @@ const projects = {
             - CSS3: For responsive design.<br>
             - REST API: Ensures seamless communication between frontend and backend.
         `,
-        videoSrc: "./Ecommerce_website.mp4"
+        videoSrc: "./Ecommerce_website.gif"
     },
     portfolio: {
         title: "Portfolio Website (HTML, CSS, JavaScript)",
@@ -63,7 +63,7 @@ const projects = {
                 - JavaScript: For interactive features and functionality.
             </p>
         `,
-        videoSrc: "./portfolio_website.mp4"
+        videoSrc: "./portfolio_website.gif"
     }
 };
 
@@ -77,22 +77,27 @@ function openProjectModal(project) {
     const projectData = projects[project];
 
     if (projectData) {
+        const isGif = projectData.videoSrc.endsWith(".gif");
         modalDetails.innerHTML = `
             <h3>${projectData.title}</h3>
             <p>${projectData.description}</p>
-            ${projectData.videoSrc ? `
-                <div class="video-container">
-                    <h2>Website Overview</h2>
-                    <video width="800" height="450" controls>
-                        <source src="${projectData.videoSrc}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    
-                </div>
-            ` : ''}
+            ${projectData.videoSrc
+                ? `<div class="media-container">
+                        <h2>Website Overview</h2>
+                        ${isGif
+                    ? `<img src="${projectData.videoSrc}" alt="${projectData.title} Overview" width="800" height="450">`
+                    : `<video width="800" height="450" controls>
+                                    <source src="${projectData.videoSrc}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                   </video>`
+                }
+                    </div>`
+                : ''
+            }
         `;
     }
 }
+
 
 // Function to Close Project Modal
 function closeProjectModal() {
