@@ -663,8 +663,8 @@ footer p {
     .right img {
         width: 300px;
         align-items: center;
-        margin-bottom: 20px;
-
+        display: block;
+        margin-bottom: 100px !important;
 
     }
 
@@ -673,6 +673,35 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    typewriter {
+        font-size: 30px !important;
+
+    }
+
+    .left .name {
+        font-size: 30px;
+        margin-top: 40px;
+        color: #333;
+    }
+
+    .left .highlight {
+        font-size: 15px;
+        color: #666;
+    }
+
+    .connect {
+        font-size: 15px;
+    }
+
+    .right img {
+        width: 200px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column !important;
+    }
+
     .contact-container {
         flex-direction: column;
         /* Stack form and box vertically on smaller screens */
