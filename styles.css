@@ -601,17 +601,9 @@ footer p {
     .typewriter {
         font-size: small;
         font-weight: 10px;
+        animation: none;
     }
 
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-
-        to {
-            width: 35%;
-        }
-    }
 
 }
 
