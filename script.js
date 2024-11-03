@@ -119,6 +119,9 @@ function openProjectModal(project) {
                                     Your browser does not support the video tag.
                                    </video>`
                 }
+                <p class="view-new-tab">
+                        <a href="${projectData.videoSrc}" target="_blank">View in new tab</a>
+                </p>
                     </div>`
                 : ''
             }
