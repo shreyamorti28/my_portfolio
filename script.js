@@ -64,6 +64,30 @@ const projects = {
             </p>
         `,
         videoSrc: "./portfolio_website.gif"
+    },
+    stockAnalysis: {
+        title: "Stock Analysis Web Application",
+        description: `
+            <strong>Overview:</strong><br>
+            This project is a stock analysis web application that allows users to fetch real-time stock data, analyze it, and visualize stock trends. The frontend is built with HTML and CSS, while the backend is powered by Python using the Flask framework. The backend utilizes various libraries like numpy, pandas, matplotlib, and yfinance to handle data processing and visualization.<br>
+            <strong>Features ✨</strong><br>
+            - Visualizing Stocks: Generate interactive plots and charts to visualize stock price movements and trends. 📊<br>
+            - Comparing Stocks: Compare multiple stocks side by side to evaluate their performance using visual representations. 🔍<br>
+            - Stock Risk Calculator: Assess the risk associated with different stocks based on historical data. ⚖️<br>
+            - Complete Stock Data Analysis: Perform comprehensive analysis of stock data using various graphs and images. 📉<br>
+            <strong>Technologies Used 🛠️</strong><br>
+            <strong>Frontend:</strong><br>
+            - HTML5: For structuring the web pages.<br>
+            - CSS3: For styling and layout of the web pages.<br>
+            <strong>Backend:</strong><br>
+            - Python: Core programming language for data analysis and backend processing.<br>
+            - Flask: Micro web framework for handling backend routing and requests.<br>
+            - Numpy: For numerical computations.<br>
+            - Pandas: For data manipulation and analysis.<br>
+            - Matplotlib: For creating charts and visualizations.<br>
+            - yfinance: For fetching real-time stock market data.<br>
+        `,
+        videoSrc: "./stock_market_analysis_tool.gif" // Ensure you have the corresponding GIF or video file
     }
 };
 
