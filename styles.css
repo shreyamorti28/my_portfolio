@@ -657,9 +657,14 @@ footer p {
         flex-direction: column !important;
     }
 
+
+
+
     .right img {
         width: 300px;
         align-items: center;
+        margin-bottom: 20px;
+
 
     }
 
@@ -711,6 +716,8 @@ footer p {
     nav ul.show {
         display: flex;
     }
+
+
 
 
 }
