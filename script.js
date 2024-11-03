@@ -10,6 +10,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+document.querySelector('.hamburger').addEventListener('click', function () {
+    document.querySelector('nav ul').classList.toggle('show');
+});
+
 
 // Project Data
 const projects = {

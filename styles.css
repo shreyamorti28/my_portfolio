@@ -567,6 +567,112 @@ footer p {
     font-size: 14px;
 }
 
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    .typewriter {
+        font-size: 5px;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 45%;
+        }
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .typewriter {
+        font-size: 2px;
+        font-weight: lighter;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+    .typewriter {
+        font-size: small;
+        font-weight: 10px;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 35%;
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .typewriter {
+        font-size: 30px !important;
+        animation: none !important;
+    }
+
+    .left .name {
+        font-size: 20px;
+        margin-top: 40px;
+        color: #333;
+    }
+
+    .left .highlight {
+        font-size: 20px;
+        color: #666;
+    }
+
+    .connect {
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width: 824px) {
+    .typewriter {
+        font-size: 40px !important;
+
+    }
+
+    .left .name {
+        font-size: 40px;
+        margin-top: 40px;
+        color: #333;
+    }
+
+    .left .highlight {
+        font-size: 20px;
+        color: #666;
+    }
+
+    .connect {
+        font-size: 20px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .right img {
+        width: 300px;
+        align-items: center;
+
+    }
+
+
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -589,4 +695,30 @@ footer p {
         margin-bottom: 2rem;
         /* Space between contact box and form on small screens */
     }
+
+    nav ul {
+        display: none;
+        /* Hide the nav links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Adjust top based on your header height */
+        right: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        color: white;
+    }
+
+    /* Show the menu when active */
+    nav ul.show {
+        display: flex;
+    }
+
+
 }
