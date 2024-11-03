@@ -792,6 +792,12 @@ footer p {
         color: white;
     }
 
+    nav ul.show {
+        display: flex;
+        justify-content: space-between;
+        /* Show the menu when toggled */
+    }
+
     .project-media {
         width: 300px;
         height: auto;
