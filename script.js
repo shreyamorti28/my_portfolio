@@ -113,7 +113,7 @@ function openProjectModal(project) {
                 ? `<div class="media-container">
                         <h2>Website Overview</h2>
                         ${isGif
-                    ? `<img src="${projectData.videoSrc}" alt="${projectData.title} Overview" width="800" height="450">`
+                    ? `<img src="${projectData.videoSrc}" alt="${projectData.title} Overview" class="project-media">`
                     : `<video width="800" height="450" controls>
                                     <source src="${projectData.videoSrc}" type="video/mp4">
                                     Your browser does not support the video tag.
