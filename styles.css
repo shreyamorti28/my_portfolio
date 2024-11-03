@@ -601,7 +601,7 @@ footer p {
     .typewriter {
         font-size: small;
         font-weight: 10px;
-        animation: none;
+        animation: none !important;
     }
 
 
