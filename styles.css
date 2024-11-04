@@ -201,6 +201,11 @@ nav ul li a.active {
     /* Optional: adds rounded corners */
 }
 
+.project-media {
+    width: 800px;
+    height: auto;
+}
+
 
 
 /* Typewriter Effect */
