@@ -1,11 +1,15 @@
-// Smooth Scrolling for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault(); // Prevent default anchor click behavior
         const targetElement = document.querySelector(this.getAttribute('href'));
         if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth' // Smooth scroll to the target element
+            const headerHeight = document.querySelector('header').offsetHeight; // Adjust header height
+            const offset = headerHeight; // Add padding if needed
+            const targetPosition = targetElement.offsetTop - offset;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
         }
     });

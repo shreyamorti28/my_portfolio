@@ -12,8 +12,13 @@ body {
 
 
 
+
 .html {
+
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+   
+    
 }
 
 header {
@@ -33,6 +38,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Add a stronger shadow for depth */
 }
+
 
 nav {
     display: flex;
@@ -115,12 +121,14 @@ nav ul li a.active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 120px 100px;
-    height: 100vh;
+    align-items: center;    
+    padding-left:100px;
+    padding-right:100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    height:auto;
     background-color: white;
-    border-top: 5px solid #ff9800;
-    border-bottom: 5px solid #ff9800;
+    border-top: 5px solid #ff9800;      
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -128,6 +136,7 @@ nav ul li a.active {
 .left {
     flex: 1;
     text-align: left;
+    
     /* Align text to the left */
     /* Add some padding to the right */
 }
@@ -135,21 +144,25 @@ nav ul li a.active {
 .left .typewriter {
     font-size: 50px;
     color: #333;
-    border-right: .15em solid orange;
-    animation: typing 2.5s steps(10, end) 0s 1 normal both, blink-caret 0.75s step-end infinite;
     width: auto;
 }
 
 .left .name {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 40px;
     color: #333;
 }
 
 .left .highlight {
-    font-size: 40px;
+    font-size: 20px;
     color: #666;
 }
+.right {
+    max-width: 400px !important;
+    height:auto;
+
+}
+
 
 
 /* Align image to the right */
@@ -180,16 +193,13 @@ nav ul li a.active {
     position: relative;
 
 }
-
-.plain-link::after {
-    content: '';
-    display: block;
-    height: 4px;
-    width: 58%;
-    background-color: #f5a623;
-    margin: 10px auto 0;
-    border-radius: 2px;
+.connect .plain-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Adds underline on hover */
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
 }
+
+
 
 .highlight-name {
     font-weight: bold;
@@ -208,43 +218,7 @@ nav ul li a.active {
 
 
 
-/* Typewriter Effect */
-.typewriter {
-    font-size: 50px;
-    font-weight: bold;
-    color: #333;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .15em solid orange;
-    animation: typing 4.5s steps(50, end) 1 normal both, blink-caret 0.75s step-end 5;
-    display: inline-block;
-    /* Ensure the width fits the content */
-    width: auto;
-}
 
-/* Keyframes for Typing */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 35%;
-    }
-}
-
-/* Keyframes for Blinking Caret */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: orange;
-    }
-}
 
 
 
@@ -471,6 +445,7 @@ th {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 5px solid #ff9800;  
 }
 
 .about-container {
@@ -480,7 +455,11 @@ th {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
+    transition: transform 0.3s;
 }
+.about-container:hover {
+    transform: scale(1.02);
+  }
 
 .about-details {
     padding: 1rem;
@@ -498,7 +477,7 @@ th {
     content: '';
     display: block;
     height: 4px;
-    width: 50%;
+    width: 15%;
     background-color: #f5a623;
     margin: 10px auto 0;
     border-radius: 2px;
@@ -528,6 +507,25 @@ th {
     display: flex;
     flex-wrap: wrap;
 }
+#about-me h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    color: #e68900;
+}
+#about-me h3::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 5%;
+    background-color: #f5a623;
+    margin: 10px auto 0;
+    border-radius: 1.5px;
+
+}
+
+
 
 .skills li {
     background-color: #ff9800;
@@ -540,7 +538,7 @@ th {
 }
 
 .skills li:hover {
-    background-color: #e68a00;
+    background-color: #744d14;
 }
 
 /* Footer Styles */
@@ -611,19 +609,7 @@ footer p {
 
 
 @media (max-width: 1500px) {
-    .typewriter {
-        font-size: 5px;
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-
-        to {
-            width: 45%;
-        }
-    }
+    
 
     .project-media {
         width: 800px;
@@ -635,23 +621,10 @@ footer p {
 
 }
 
-@media (max-width: 1300px) {
-    .typewriter {
-        font-size: 2px;
-        font-weight: lighter;
-    }
 
-
-
-}
 
 @media (max-width: 1200px) {
-    .typewriter {
-        font-size: small;
-        font-weight: 10px;
-        animation: none !important;
-    }
-
+    
     .project-media {
         width: 500px;
         height: auto;
@@ -664,10 +637,30 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-    .typewriter {
-        font-size: 30px !important;
-        animation: none !important;
+    #about-me h2{
+        font-size: 2.0rem;
     }
+    .about-details p {
+        font-size: 1.1rem;
+    }
+    #about-me h3 {
+        font-size: 1.4rem;
+
+    }
+    .skills-category h4 {
+        font-size: 1.4rem;
+    }
+    .skills li {
+        border-radius: 15px;
+        font-size: small;
+    }
+    #projects h2 {
+        font-size: 2.0rem;
+    }
+    .project-card p{
+        font-size: 1.0rem;
+    }
+    
 
     .left .name {
         font-size: 20px;
@@ -683,15 +676,14 @@ footer p {
     .connect {
         font-size: 15px;
     }
+    .right img{
+        width:350px;
+    }
 
 
 }
 
 @media (max-width: 824px) {
-    .typewriter {
-        font-size: 40px !important;
-
-    }
 
     .left .name {
         font-size: 40px;
@@ -717,10 +709,9 @@ footer p {
 
 
     .right img {
-        width: 300px;
+        width: 200px;
         align-items: center;
         display: block;
-        margin-bottom: 100px !important;
 
     }
 
@@ -729,10 +720,11 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    typewriter {
-        font-size: 35px !important;
-
+    .left{
+        padding-bottom:20px;
     }
+    
+   
 
     .left .name {
         font-size: 35px;
@@ -752,12 +744,15 @@ footer p {
     .right img {
         width: 200px;
     }
+    .right{
+        padding-bottom:20px ;
+    }
 
     #about {
         display: flex;
         flex-direction: column !important;
     }
-
+    
     .contact-container {
         flex-direction: column;
         /* Stack form and box vertically on smaller screens */
@@ -780,13 +775,15 @@ footer p {
 
     nav ul {
         display: none;
+        overflow-x: auto; 
+        flex-direction: row;
         /* Hide the nav links */
-        flex-direction: column;
         position: absolute;
         top: 60px;
         /* Adjust top based on your header height */
         right: 0;
         width: 100%;
+        height: 50px;
         background-color: #333;
     }
 
@@ -800,13 +797,22 @@ footer p {
     nav ul.show {
         display: flex;
         justify-content: space-between;
-        /* Show the menu when toggled */
     }
 
     .project-media {
         width: 300px;
         height: auto;
 
+    }
+    nav ul li{
+        padding-top: 10px;
+        margin: 0px !important;
+        width:auto !important;
+        white-space: nowrap; 
+    }
+    nav ul a{
+        font-size: medium !important;
+        font-weight: 600 !important;
     }
 
 
@@ -819,5 +825,38 @@ footer p {
         height: auto;
 
     }
+    .right img{
+        display: none;
+    }
+    .right{
+        display: none;
+        
+    }
+    
+}
 
+@media(max-height:600px){
+    .left .name {
+        font-size: 40px;
+        margin-top: 40px;
+        color: #333;
+    }
+
+    .left .highlight {
+        font-size: 20px;
+        color: #666;
+    }
+    .right {
+        max-width: 400px !important;
+        height:auto;
+
+    }
+
+}
+
+@media(max-width:300px){
+    body {
+        min-width: 300px;  
+        overflow-x: hidden;  
+    }
 }
