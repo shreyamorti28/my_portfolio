@@ -832,6 +832,21 @@ footer p {
         display: none;
         
     }
+    #modalDetails h3 {
+        font-size: 1em;
+    }
+    #modalDetails p {
+        font-size: 0.8em;
+    }
+    #projects h2 {
+        font-size: 1.0rem;
+    }
+    #about-me h2 {
+        font-size: 1.0rem;
+    }
+    #projects h2::after {
+        width: 70px;
+    }
     
 }
 
@@ -859,4 +874,5 @@ footer p {
         min-width: 300px;  
         overflow-x: hidden;  
     }
+    
 }
