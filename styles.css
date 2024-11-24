@@ -13,6 +13,7 @@ body {
 
 
 
+
 .html {
 
     scroll-behavior: smooth;
@@ -130,6 +131,8 @@ nav ul li a.active {
     background-color: white;
     border-top: 5px solid #ff9800;      
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh;
 }
 
 /* Align text to the left */
@@ -839,10 +842,10 @@ footer p {
         font-size: 0.8em;
     }
     #projects h2 {
-        font-size: 1.0rem;
+        font-size: 2.0rem;
     }
     #about-me h2 {
-        font-size: 1.0rem;
+        font-size: 2.0rem;
     }
     #projects h2::after {
         width: 70px;
@@ -870,6 +873,11 @@ footer p {
 }
 
 @media(max-width:300px){
+    #about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     body {
         min-width: 300px;  
         overflow-x: hidden;  
