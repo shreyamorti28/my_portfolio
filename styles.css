@@ -823,14 +823,14 @@ footer p {
 }
 
 @media (max-width:545px) {
-    .left{
-        margin: 0;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    .left {
+        position: absolute; /* Establish a positioning context */
+        
+        top: 50%; /* Move the element's top edge to the center */
+        left: 50%; /* Move the element's left edge to the center */
+        transform: translate(-50%, -50%);
+      }
+    
     .project-media {
         width: 200px;
         height: auto;
