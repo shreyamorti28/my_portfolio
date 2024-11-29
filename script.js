@@ -24,54 +24,79 @@ const projects = {
     ecommerce: {
         title: "E-commerce Website (MERN Stack)",
         description: `
-            <strong>Frontend Features:</strong><br>
-            - Responsive Design: Adaptive layout for optimal viewing on mobile and desktop devices. 📱💻<br>
-            - Interactive Elements: Automatic scrolling and hover effects enhance usability. 🎨<br>
-            - Product Viewing: Detailed product descriptions, reviews, and ratings. ⭐<br>
-            - Cart Functionality:<br>
-              &nbsp;&nbsp;&nbsp;• Add products to the cart.<br>
-              &nbsp;&nbsp;&nbsp;• View cart with pricing and total calculations.<br>
-              &nbsp;&nbsp;&nbsp;• Delete products with automatic price updates.<br>
-            - Product Categories: Organized exploration of products.<br>
-            - Email Subscription Form: Users can sign up for newsletters and promotions.<br>
-            - Home Page Promotions: Eye-catching banners for offers and related products.<br>
-            - User Authentication: Secure login and persisted cart data, managed through a MongoDB database.<br>
-            <strong>Admin Panel:</strong><br>
-            - Add Products: Easily manage inventory by adding new products.<br>
-            - View Products: Admins can view and manage all existing products.<br>
-            <strong>Backend Technologies:</strong><br>
-            - RESTful API: Facilitates CRUD operations for products and user data.<br>
-            - Express.js: Handles routing and server-side logic.<br>
-            - Node.js: JavaScript runtime for backend operations.<br>
-            - MongoDB: NoSQL database for storing product and user information.<br>
-            <strong>Technologies Used:</strong><br>
-            - MongoDB: For data storage.<br>
-            - Express.js: For backend API development.<br>
-            - React: For building interactive user interfaces.<br>
-            - Node.js: For server-side logic.<br>
-            - CSS3: For responsive design.<br>
-            - REST API: Ensures seamless communication between frontend and backend.
+        <p>A feature-rich eCommerce website offering seamless product listing, detailed descriptions, secure user authentication, product reviews, and a visually appealing, user-friendly interface designed for optimal responsiveness across all devices.</p>
+        <p>
+        <strong>Features:</strong><br>
+        📱 Responsive Design: Adaptable layout that works perfectly on all screen sizes.<br>
+         🎨 Interactive Elements: Automatic scrolling and hover effects for an engaging user experience.<br>
+         🛍️ Product Viewing: Browse products with detailed descriptions, reviews, and ratings.<br>
+         🛒 Cart Functionality:<br>
+         Add products to the cart and view a breakdown of pricing.<br>
+         Calculate the total price and delete products dynamically.<br>
+         🗂️ Product Categories: Products are well-organized into categories.<br>
+         📩 Email Subscription Form: Stay updated with newsletters and exclusive offers.<br>
+         🏷️ Home Page Promotions: Highlighted offers and related products to boost user engagement.<br>
+         🔒 User Authentication:<br>
+         Secure login using JWT for authentication.<br>
+         Persistent cart data, ensuring previously added products remain accessible.<br>
+        </p>
+        <p>
+        <strong>Technologies Used:</strong><br>
+         <strong>Frontend Development</strong><br>
+         React: For building interactive and dynamic user interfaces.<br>
+         CSS3: To design responsive and visually appealing layouts, including hover effects and transitions.<br>
+         <strong>Backend Development</strong><br>
+         Node.js: JavaScript runtime for executing server-side operations.<br>
+         Express.js: For creating RESTful APIs and managing server-side routing.<br>
+         Database
+         MongoDB: NoSQL database for efficient storage and management of user and product information.
+         APIs<br>
+         RESTful API: Facilitates seamless communication between the frontend and backend, supporting CRUD operations.<br>
+         <strong>Authentication & Security</strong><br>
+         JWT: For secure user authentication and maintaining session integrity.<br>
+         bcrypt: Hashing passwords for enhanced security.<br>
+         <strong>Deployment</strong><br>
+         Vercel: For hosting the React frontend with continuous deployment from GitHub.<br>
+         Render: For hosting the Node.js backend server.<br>
+         Git & GitHub: For source code management and version control.<br>
+        </p>
+         
+
         `,
-        videoSrc: "./Ecommerce_website.gif"
+        web: "https://ecommerce-25hx.vercel.app/"
     },
     portfolio: {
-        title: "Portfolio Website (HTML, CSS, JavaScript)",
+        title: "Ai-styling-agent (React, Firebase, ResNet50 CNN)",
         description: `
-            <p>Welcome to my portfolio website! This project showcases my work and skills as a developer. The website is built using HTML, CSS, and JavaScript, and is designed to be responsive and visually appealing across different devices.</p>
+            <p>The Styling Agent Using Deep Learning is a web-based solution designed to solve the daily dilemma of choosing what to wear. Leveraging advanced deep learning models to generate smart outfit recommendations for any occasion. With a user-friendly interface, you can easily upload and organize your clothing items in a virtual wardrobe and generate tailored outfit suggestions whenever needed. This makes deciding what goes well together effortless and stress-free! 👗👖</p>
             <p>
                 <strong>Features ✨</strong><br>
-                - Responsive Design: The website adjusts seamlessly to various screen sizes, providing an optimal viewing experience on mobile, tablet, and desktop devices. 📱💻<br>
-                - Beautiful UI: A clean and modern layout that highlights my projects and skills effectively. 🎨<br>
-                - Interactive Elements: Engaging features and animations that enhance user experience. 🚀
+                Deep Learning Model: Utilizes the ResNet50 Convolutional Neural Network (CNN) for extracting visual features from outfit combinations. 🧠<br>
+                Personalized Recommendations: Offers fashion suggestions tailored to user preferences, enhancing outfit variety and reducing decision fatigue. 🎉<br>
+                Similarity Measurement: Implements the Euclidean distance metric to compare features from a pre-existing large-scale dataset of fashion images, ranking the best outfit combinations. 📏<br>
+                Seamless User Experience: Designed for easy navigation and interaction, ensuring a smooth experience for users seeking fashion guidance. 🖥️<br>
             </p>
             <p>
                 <strong>Technologies Used 🛠️</strong><br>
-                - HTML5: For structuring the web pages.<br>
-                - CSS3: For styling and layout.<br>
-                - JavaScript: For interactive features and functionality.
+                <strong>Frontend Development</strong><br>
+                React: For creating a dynamic and responsive user interface.
+                CSS: For styling and designing visually appealing components.<br>
+                <strong>Backend Development</strong><br>
+                Flask: A lightweight and powerful Python framework for building RESTful APIs.
+                Firebase Authentication: For secure user authentication.
+                Firebase Storage: For storing and retrieving user-provided images.<br>
+                <strong>Deep Learning & Computer Vision</strong><br>
+                PyTorch: Utilized for implementing and training deep learning models.
+                TensorFlow: Complementary framework for deep learning tasks and model evaluation.
+                ResNet50 (CNN): A pre-trained Convolutional Neural Network used for feature extraction and outfit matching.
+                OpenCV (cv2): For image processing and manipulation.<br>
+                <strong>APIs</strong><br>
+                REST API: For seamless communication between the frontend and backend services.
+                Programming Languages
+                Python: For backend development, deep learning model implementation, and API integration.
             </p>
         `,
-        videoSrc: "./portfolio_website.gif"
+        web: "https://ai-styling-agent-gvq4-hqkuyp0yi-shreyamorti28s-projects.vercel.app/"
     },
     stockAnalysis: {
         title: "Stock Analysis Web Application",
@@ -95,10 +120,11 @@ const projects = {
             - Matplotlib: For creating charts and visualizations.<br>
             - yfinance: For fetching real-time stock market data.<br>
         `,
-        videoSrc: "./stock_market_analysis_tool.gif" // Ensure you have the corresponding GIF or video file
+        web: "./stock_market_analysis_tool.gif" // Ensure you have the corresponding GIF or video file
     }
 };
 
+// Function to Open Project Modal
 // Function to Open Project Modal
 function openProjectModal(project) {
     document.body.classList.add("shifted"); // Add a class for styling
@@ -109,24 +135,17 @@ function openProjectModal(project) {
     const projectData = projects[project];
 
     if (projectData) {
-        const isGif = projectData.videoSrc.endsWith(".gif");
         modalDetails.innerHTML = `
             <h3>${projectData.title}</h3>
             <p>${projectData.description}</p>
-            ${projectData.videoSrc
+            ${projectData.web
                 ? `<div class="media-container">
-                        <h2>Website Overview</h2>
-                        ${isGif
-                    ? `<img src="${projectData.videoSrc}" alt="${projectData.title} Overview" class="project-media">`
-                    : `<video width="800" height="450" controls>
-                                    <source src="${projectData.videoSrc}" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                   </video>`
-                }
-                <p class="view-new-tab">
-                        <a href="${projectData.videoSrc}" target="_blank">View in new tab</a>
-                </p>
-                    </div>`
+                        <p>
+                            <a href="${projectData.web}" target="_blank" class="project-link">
+                                Visit ${projectData.title}
+                            </a>
+                        </p>
+                   </div>`
                 : ''
             }
         `;
