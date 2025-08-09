@@ -543,6 +543,47 @@ th {
 .skills li:hover {
     background-color: #744d14;
 }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.skill-category h4 {
+  color: #ff9800;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 4px;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-category ul li {
+  background-color: #f57c00;
+  color: white;
+  margin-bottom: 8px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  box-shadow: 0 3px 8px rgba(245, 124, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.skill-category ul li:hover {
+  background-color: #ffb74d;
+  cursor: default;
+}
+
 
 /* Footer Styles */
 footer {
@@ -556,6 +597,34 @@ footer {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
     /* Subtle shadow */
 }
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px 5px;
+}
+
+.skills-cloud span {
+  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.5);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+}
+
+.skills-cloud span:hover {
+  transform: scale(1.15) rotate(-3deg);
+  box-shadow: 0 8px 20px rgba(255, 152, 0, 0.8);
+  background: linear-gradient(135deg, #f57c00 0%, #ffb74d 100%);
+}
+
 
 footer .icon {
     color: white;
